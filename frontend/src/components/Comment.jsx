@@ -10,7 +10,7 @@ const Comment = ({c,post}) => {
   const {user}=useContext(UserContext)
   const deleteComment=async(id)=>{
     try{
-      await axios.delete(URL+"/api/comments/"+id,{withCredentials:true})
+      await axios.delete("https://blogapp-1-11u7.onrender.com/api/comments/"+id,{withCredentials:true})
       window.location.reload(true)
     }
     catch(err){

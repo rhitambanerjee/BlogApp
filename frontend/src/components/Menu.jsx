@@ -12,7 +12,7 @@ const navigate=useNavigate()
 
 const handleLogout=async()=>{
   try{
-    const res=await axios.get(URL+"/api/auth/logout",{withCredentials:true})
+    const res=await axios.get("https://blogapp-1-11u7.onrender.com/api/auth/logout",{withCredentials:true})
     // console.log(res)
     setUser(null)
     navigate("/login")
